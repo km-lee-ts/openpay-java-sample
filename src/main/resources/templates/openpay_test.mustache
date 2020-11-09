@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>오픈페이 테스트</title>
+    <link rel="stylesheet" href="/css/common.css"/>
+
+    <script src="https://js.tosspayments.com/v1/openpay" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="section">
+    <h3>오픈페이 테스트</h3>
+</div>
+
+<p>
+    <button onclick="authenticate();">1. 인증 연결</button>
+</p>
+
+<p>
+    <button onclick="addPaymentMethod();">2. 결제 수단 추가</button>
+</p>
+
+<p>
+    <button onclick="requestPayment();">3. 결제 실행</button>
+</p>
+
+
+<script type="text/javascript">
+    var openpay = OpenPay("test_ck_OEP59LybZ8Bdv6A1JxkV6GYo7pRe", "{{customerKey}}");
+
+    function authenticate() {
+        openpay.authenticate();
+    }
+
+
+    function addPaymentMethod() {
+        alert("준비 중입니다.")
+        //openpay.addPaymentMethod('카드');
+    }
+
+    function requestPayment() {
+        alert("준비 중입니다.")
+        //openpay.requestPayment('카드', {});
+    }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.container div {
+    margin: 30px;
+}
+
+label {
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+button {
+    border: 1px solid #AAA;
+    border-radius: 3px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-align: right;
+}
+
+.control {
+    display: none;
+}
+
+@media all and (min-width:660px) {
+    .container {
+        width: 600px;
+        margin: auto;
+    }
+
+    .inner {
+        border: 1px solid #DDD;
+        border-radius: 10px;
+        width: 600px;
+        height: 600px;
+    }
+
+    .container .inner {
+        margin: 30px 0 0;
+    }
+}
